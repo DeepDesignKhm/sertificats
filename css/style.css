@@ -1,0 +1,161 @@
+p, a, h1, h2, h3, h4, h5, h6, span{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*==============================================*/
+
+
+
+/*==============================================*/
+.testing h3 {
+  position: relative;
+  margin: 0 auto;
+  padding: 100px 0 0;
+  width: 900px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #006699;
+  font-size: 30px;
+  font-weight: 700;
+  background: #fff;
+  z-index: 2;
+}
+
+.testing,
+.info_test {
+	position: relative;
+}
+
+.orangeBorder {
+  position: absolute;
+  top: 180px;
+  left: calc(50% - 511px);
+  left: -moz-calc(50% - 511px);
+  left: -webkit-calc(50% - 511px);
+  width: 1022px;
+  height: 260px;
+  border: 2px solid #ff6600;
+}
+/* media start */
+@media (max-width: 1199px) {
+  .orangeBorder {
+	left: calc(50% - 475px);
+    left: -moz-calc(50% - 475px);
+    left: -webkit-calc(50% - 475px);
+    width: 950px;
+    height: 220px;
+  }
+}
+/* media end */
+
+.testing img {
+  position: relative;
+  padding: 57px 15px 45px;
+}
+
+/* media start */
+@media (max-width: 991px){
+  .testing h3 {
+    width: 100%;
+  }
+  .orangeBorder {
+	display: none;
+  }
+  .testing img {
+    margin: 0 auto;
+  }
+}
+/* media end */
+
+.text_down,
+.text_up {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  background: #fff;
+}
+.text_up {
+  max-width: 100px;
+}
+.text_down {
+  margin-top: 70px;
+  max-width: 218px;
+}
+
+.greyBorder {
+  position: absolute;
+  width: 238px;
+  height: 93px;
+  border: 2px solid rgba(215, 215, 215, 0.5);
+  top: 8px;
+  left: calc(50% - 119px);
+  left: -moz-calc(50% - 119px);
+  left: -webkit-calc(50% - 119px);
+}
+.greyBorder p {
+  font-size: 30px;
+  font-weight: 300;
+  color: #f60;
+  text-align: center;
+  line-height: 93px;
+}
+.wrapp_head {
+  display: -webkit-box; 
+  display: -webkit-flex; 
+  display: -ms-flexbox; 
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+h2{
+  position: relative;
+  text-transform: uppercase;
+}
+h2:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -16px;
+  background-color:  #ff6600;
+  width: 8px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+/*==============================================*/
+
+header{
+    margin-top:20px;
+}
+.slogan{
+    text-align: center;
+    margin:0 auto;
+}
+.phone-head{
+    float:right;
+}
+.head-span{
+    display:block;
+}
+header h2{
+    font-size: 16pt;
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+    
+}
+.navbar ul li a{
+    
+}
