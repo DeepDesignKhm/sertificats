@@ -1,102 +1,6 @@
 p, a, h1, h2, h3, h4, h5, h6, span{
     font-family: 'Open Sans', sans-serif;
 }
-
-
-
-
-/*==============================================*/
-.about-company {
-  background: url(../img/about-bg.jpg) no-repeat left top;
-  background-size: contain;
-}
-.about_text p {
-  color: #333333;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: justify;
-}
-.about_text > p:first-child strong {
-  text-transform: uppercase;
-}
-.about_text > p:last-child {
-  padding: 20px 0 0;
-}
-
-
-/*==============================================*/
-.testing h3 {
-  position: relative;
-  margin: 0 auto;
-  padding: 100px 0 0;
-  width: 900px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #006699;
-  font-size: 30px;
-  font-weight: 700;
-  background: #fff;
-  z-index: 2;
-}
-
-.testing,
-.info_test {
-	position: relative;
-}
-
-.orangeBorder {
-  position: absolute;
-  top: 180px;
-  left: calc(50% - 511px);
-  left: -moz-calc(50% - 511px);
-  left: -webkit-calc(50% - 511px);
-  width: 1022px;
-  height: 260px;
-  border: 2px solid #ff6600;
-}
-
-.testing img {
-  position: relative;
-  padding: 57px 15px 45px;
-}
-
-.text_down,
-.text_up {
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 auto;
-  z-index: 2;
-  position: relative;
-  background: #fff;
-}
-.text_up {
-  max-width: 100px;
-}
-.text_down {
-  margin-top: 70px;
-  max-width: 218px;
-}
-
-.greyBorder {
-  position: absolute;
-  width: 238px;
-  height: 93px;
-  border: 2px solid rgba(215, 215, 215, 0.5);
-  top: 8px;
-  left: calc(50% - 119px);
-  left: -moz-calc(50% - 119px);
-  left: -webkit-calc(50% - 119px);
-}
-.greyBorder p {
-  font-size: 30px;
-  font-weight: 300;
-  color: #f60;
-  text-align: center;
-  line-height: 93px;
-}
 .wrapp_head {
   display: -webkit-box; 
   display: -webkit-flex; 
@@ -113,7 +17,7 @@ p, a, h1, h2, h3, h4, h5, h6, span{
 h2 {
   margin-top: 70px;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   text-transform: uppercase;
   color: #333333;
   font-size: 35px;
@@ -158,6 +62,104 @@ header h2{
 .navbar ul li a{
     
 }
+
+/*==============================================*/
+.about-company {
+  background: url(../img/about-bg.jpg) no-repeat left top;
+  background-size: contain;
+  padding-bottom: 20px;
+}
+.about_text p {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: justify;
+}
+.about_text > p:first-child strong {
+  text-transform: uppercase;
+}
+.about_text > p:last-child {
+  padding: 20px 0 0;
+}
+
+/*==============================================*/
+.testing h2, .testing {
+  padding-bottom: 45px;
+}
+
+.testing h3 {
+  position: relative;
+  margin: 0 auto;
+  width: 900px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #006699;
+  font-size: 30px;
+  font-weight: 700;
+  background: #f6f6f6;
+  z-index: 2;
+}
+
+.testing,
+.info_test {
+  position: relative;
+  background-color:  #f6f6f6
+}
+
+.orangeBorder {
+  position: absolute;
+  top: 180px;
+  left: calc(50% - 511px);
+  left: -moz-calc(50% - 511px);
+  left: -webkit-calc(50% - 511px);
+  width: 1022px;
+  height: 260px;
+  border: 2px solid #ff6600;
+}
+
+.testing img {
+  position: relative;
+  padding: 57px 15px 45px;
+}
+
+.text_down,
+.text_up {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  background: #f6f6f6;
+}
+.text_up {
+  max-width: 100px;
+}
+.text_down {
+  margin-top: 70px;
+  max-width: 218px;
+}
+
+.greyBorder {
+  position: absolute;
+  width: 238px;
+  height: 93px;
+  border: 2px solid rgba(215, 215, 215, 0.5);
+  top: 8px;
+  left: calc(50% - 119px);
+  left: -moz-calc(50% - 119px);
+  left: -webkit-calc(50% - 119px);
+}
+.greyBorder p {
+  font-size: 30px;
+  font-weight: 300;
+  color: #f60;
+  text-align: center;
+  line-height: 93px;
+}
+
 
 /*==========  Desktop First Method  ==========*/
 
