@@ -137,9 +137,6 @@ header h2:before {
   color: #f60;
   font-weight: 600;
 }
-
-
-/*==============================================*/
 /*=======================slider============================*/
 .carousel-caption{
     left:50%;
@@ -170,6 +167,35 @@ header h2:before {
     line-height: 41px;/* Приближение из-за подстановки шрифтов */
     text-align: justify;
     text-transform: uppercase;
+}
+.da-ras{
+    background-color:  #ff6600;
+    box-shadow: 1px 2px 0px 0px #db5800;
+    width: 270px;
+    height: 40px;
+    display:block;
+    color:  #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: center;
+    transform: scaleY(1.0002);
+    float:left;
+}
+.net-ras{
+    background-color:  #919191;
+    box-shadow: 1px 2px 0px 0px #7f7f7f;
+    width: 270px;
+    height: 40px;
+    color:  #ffffff;
+    display:block;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: center;
+    transform: scaleY(1.0002);
+    float:left;
+    margin-left: 29px;
 }
 /*=======================about============================*/
 .about-company {
@@ -388,6 +414,55 @@ header h2:before {
   font-weight: 400;
   line-height: 24px;
   background: url(../img/icon_lock.png) no-repeat 10px 25px;
+}
+/*============================= preim =========================*/
+.block_warner{
+    border-radius: 2px;
+    border-width: 1px;
+    border-color:  #ff6600;
+    border-style: solid;
+    height: 95px;
+    position: relative;
+    padding-top: 15px;
+}
+.block_warner p{
+    color:  #006699;
+    font-size: 15.99px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    transform: scaleY(1.0005);
+    margin-left: 60px;
+    max-width: 920px;
+}
+.block_warner .blue-b{
+    font-weight: 700;
+}
+.block_warner img{
+    position: absolute;
+    left:-30px;
+    top: 18px;
+}
+.block-preim{
+    position: relative;
+    float:left;
+    clear: both;
+    margin-top: 60px;
+}
+.block-preim img{
+    float:left;
+    text-align: right;
+    margin-right: 60px;
+}
+.block-preim p{
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+.block-preim .black-b{
+    font-weight: 700;
 }
 /*===== footer =====*/
 footer {
