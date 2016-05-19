@@ -3,8 +3,26 @@ p, a, h1, h2, h3, h4, h5, h6, span{
 }
 
 
-/*==============================================*/
 
+
+/*==============================================*/
+.about-company {
+  background: url(../img/about-bg.jpg) no-repeat left top;
+  background-size: contain;
+}
+.about_text p {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: justify;
+}
+.about_text > p:first-child strong {
+  text-transform: uppercase;
+}
+.about_text > p:last-child {
+  padding: 20px 0 0;
+}
 
 
 /*==============================================*/
@@ -37,36 +55,11 @@ p, a, h1, h2, h3, h4, h5, h6, span{
   height: 260px;
   border: 2px solid #ff6600;
 }
-/* media start */
-@media (max-width: 1199px) {
-  .orangeBorder {
-	left: calc(50% - 475px);
-    left: -moz-calc(50% - 475px);
-    left: -webkit-calc(50% - 475px);
-    width: 950px;
-    height: 220px;
-  }
-}
-/* media end */
 
 .testing img {
   position: relative;
   padding: 57px 15px 45px;
 }
-
-/* media start */
-@media (max-width: 991px){
-  .testing h3 {
-    width: 100%;
-  }
-  .orangeBorder {
-	display: none;
-  }
-  .testing img {
-    margin: 0 auto;
-  }
-}
-/* media end */
 
 .text_down,
 .text_up {
@@ -117,9 +110,15 @@ p, a, h1, h2, h3, h4, h5, h6, span{
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-h2{
+h2 {
+  margin-top: 70px;
   position: relative;
+  padding-bottom: 60px;
   text-transform: uppercase;
+  color: #333333;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
 }
 h2:before {
   content: '';
@@ -158,4 +157,38 @@ header h2{
 }
 .navbar ul li a{
     
+}
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .orangeBorder {
+	left: calc(50% - 475px);
+    left: -moz-calc(50% - 475px);
+    left: -webkit-calc(50% - 475px);
+    width: 950px;
+    height: 220px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+   .testing h3 {
+    width: 100%;
+  }
+  .orangeBorder {
+	display: none;
+  }
+  .testing img {
+    margin: 0 auto;
+  }
+  }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+ 
 }
