@@ -65,99 +65,134 @@ header h2{
 
 /*==============================================*/
 .about-company {
-  background: url(../img/about-bg.jpg) no-repeat left top;
-  background-size: contain;
-  padding-bottom: 20px;
+    background: url(../img/about-bg.jpg) no-repeat left top;
+    background-size: contain;
+    padding-bottom: 20px;
 }
 .about_text p {
-  color: #333333;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: justify;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
 }
 .about_text > p:first-child strong {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 .about_text > p:last-child {
-  padding: 20px 0 0;
+    padding: 20px 0 0;
 }
 
 /*==============================================*/
 .testing h2, .testing {
-  padding-bottom: 45px;
+    padding-bottom: 45px;
 }
 
 .testing h3 {
-  position: relative;
-  margin: 0 auto;
-  width: 900px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #006699;
-  font-size: 30px;
-  font-weight: 700;
-  background: #f6f6f6;
-  z-index: 2;
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #006699;
+    font-size: 30px;
+    font-weight: 700;
+    background: #f6f6f6;
+    z-index: 2;
 }
 
 .testing,
 .info_test {
-  position: relative;
-  background-color:  #f6f6f6
+    position: relative;
+    background-color:  #f6f6f6;
 }
 
 .orangeBorder {
-  position: absolute;
-  top: 180px;
-  left: calc(50% - 511px);
-  left: -moz-calc(50% - 511px);
-  left: -webkit-calc(50% - 511px);
-  width: 1022px;
-  height: 260px;
-  border: 2px solid #ff6600;
+    position: absolute;
+    top: 180px;
+    left: calc(50% - 511px);
+    left: -moz-calc(50% - 511px);
+    left: -webkit-calc(50% - 511px);
+    width: 1022px;
+    height: 260px;
+    border: 2px solid #ff6600;
 }
 
 .testing img {
-  position: relative;
-  padding: 57px 15px 45px;
+    position: relative;
+    padding: 57px 15px 45px;
 }
 
 .text_down,
 .text_up {
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 auto;
-  z-index: 2;
-  position: relative;
-  background: #f6f6f6;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    background: #f6f6f6;
 }
 .text_up {
-  max-width: 100px;
+    max-width: 100px;
 }
 .text_down {
-  margin-top: 70px;
-  max-width: 218px;
+    margin-top: 70px;
+    max-width: 218px;
 }
 
 .greyBorder {
-  position: absolute;
-  width: 238px;
-  height: 93px;
-  border: 2px solid rgba(215, 215, 215, 0.5);
-  top: 8px;
-  left: calc(50% - 119px);
-  left: -moz-calc(50% - 119px);
-  left: -webkit-calc(50% - 119px);
+    position: absolute;
+    width: 238px;
+    height: 93px;
+    border: 2px solid rgba(215, 215, 215, 0.5);
+    top: 8px;
+    left: calc(50% - 119px);
+    left: -moz-calc(50% - 119px);
+    left: -webkit-calc(50% - 119px);
 }
 .greyBorder p {
-  font-size: 30px;
-  font-weight: 300;
-  color: #f60;
-  text-align: center;
-  line-height: 93px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #f60;
+    text-align: center;
+    line-height: 93px;
+}
+/*====================== Uslugi ===========================*/
+.sertificat{
+    background: url(img/sertiif-bg.jpg) bottom no-repeat;
+    text-align: center;
+    box-shadow: 7px 13px 27px 0px rgba(91, 76, 107, 0.13);
+    height: 430px;
+    margin-top: 50px;
+}
+.sertificat:hover{
+    box-shadow: 0px 1px 1px 0px rgba(114, 79, 75, 0.19);
+}
+.sertificat p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.sertificat a{
+    color:  #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: justify;
+    transform: scaleY(1.0002);    
+    width: 151px;
+    height: 35px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color:  #ff6600;
+    box-shadow: 1px 2px 0px 0px #db5800;
+    }
+.sertificat a:hover{
+    background-color:  #ff9600;
+    box-shadow: 1px 2px 0px 0px #de8800;
 }
 /*===== footer =====*/
 footer {
@@ -215,6 +250,7 @@ footer img {
   line-height: 22px;
 }
 
+>>>>>>> origin/master
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
