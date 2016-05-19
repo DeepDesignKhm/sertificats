@@ -36,6 +36,10 @@ h2:before {
   border-radius: 50%;
 }
 
+.form-control:focus {
+  border-color:  #ff7100;
+}
+
 /*==============================================*/
 
 header{
@@ -117,6 +121,24 @@ header h2:before {
     color: #ff6600;
     text-decoration: underline;
 }
+
+/*===== request =====*/
+.request {
+  padding: 53px 0 48px;
+  background: url(../img/forms-bg.jpg) no-repeat;
+  background-size: cover;
+}
+.upper {
+  display: block;
+}
+.orange {
+  padding: 0 0 25px;
+  font-size: 18px;
+  color: #f60;
+  font-weight: 600;
+}
+
+
 /*==============================================*/
 /*=======================slider============================*/
 .carousel-caption{
@@ -294,6 +316,79 @@ header h2:before {
     background-color:  #ff9600;
     box-shadow: 1px 2px 0px 0px #de8800;
 }
+/*===== question =====*/
+.question {
+  padding: 53px 0 48px;
+  background: url(../img/uslugi-gb.jpg) no-repeat;
+  background-size: cover;
+}
+.question .container,
+.request .container {
+  padding: 0 46px;
+  border-radius: 2px;
+  background-color:  rgba(0, 67, 105, 0.7);
+}
+.question h3,
+.request h3 {
+  color:  #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.question h3 span,
+.request h3 span {
+  text-transform: uppercase;
+}
+.question input,
+.request input {
+  padding-left: 60px;
+  width: 365px !important;
+  height: 45px;
+  border-radius: 1px;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  outline: #ff7100;
+}
+
+.question input[type="name"],
+.request input[type="name"] {
+  margin-right: 15px;
+  background: #fff url(../img/icon_user.png) no-repeat 15px 4px;
+}
+.question input[type="phone"],
+.request input[type="phone"] {
+  background: #fff url(../img/icon_phone.png) no-repeat 15px 4px;
+  margin-right: 30px;
+}
+.question button,
+.request button {
+  border-radius: 1px;
+  background-color:  #f60;
+  border-color: transparent;
+  width: 269px;
+  height: 45px;
+  color:  #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.question button:hover,
+.request button:hover {
+  background-color: #ff9600;
+  color: #fff;
+  border-color: #ff9600;
+}
+.question p,
+.request .warranty {
+  padding: 22px 0 45px 44px;
+  color: #9cf;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  background: url(../img/icon_lock.png) no-repeat 10px 25px;
+}
 /*===== footer =====*/
 footer {
   padding: 40px 0;
@@ -333,7 +428,7 @@ footer img {
   text-align: right;
 }
 .footer-right a {
-  display: block;
+  width: 180px;
   color: #f60;
   font-size: 14px;
   font-weight: 300;
@@ -350,11 +445,10 @@ footer img {
   line-height: 22px;
 }
 
->>>>>>> origin/master
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1199px) {
   .orangeBorder {
 	left: calc(50% - 475px);
     left: -moz-calc(50% - 475px);
@@ -362,25 +456,97 @@ footer img {
     width: 950px;
     height: 220px;
   }
+  .question h3,
+  .question p,
+  .request h3,
+  .request p {
+	text-align: center;
+  }
+  .question input[type="name"],
+  .request input[type="name"]{
+    margin-left: 70px;
+  }
+  .question button,
+  .request button {
+    margin: 20px auto 0;
+    display: block;
+  }
+  .question p,
+  .request .warranty {
+	background-position-x: 220px;
+  }
+  .footer-right {
+    padding-left: 50px;
+  }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-   .testing h3 {
+@media only screen and (max-width : 991px) {
+  .testing h3 {
     width: 100%;
   }
   .orangeBorder {
-	display: none;
+    display: none;
   }
   .testing img {
     margin: 0 auto;
   }
+  .form-inline .form-group {
+	display: block;
   }
+  .question input[type="name"],
+  .question input[type="phone"],
+  .request input[type="name"],
+  .request input[type="phone"]{
+    display: block;
+	margin: 0 auto;
+  }
+  .question input[type="phone"],
+  .request input[type="phone"]{
+    margin-top: 20px; 
+  }
+  .question p,
+  .request .warranty {
+    background-position-x: 110px;
+  }
+ 
+  .footer-right {
+    padding: 0;
+  }
+}
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
+  .question p,
+  .request .warranty {
+    padding: 45px 0;
+    background-position-x: 50%;
   }
+  footer img,
+  .footer-right a{
+    margin: 0 auto;
+    display: block;
+  }
+  .foot-menu ul {
+    padding: 0;
+  }
+  .footer-left a,
+  .foot-menu ul,
+  .phone2,
+  .coppyright {
+    text-align: center;
+  }
+ 
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
- 
+  .question input,
+  .request input {
+    width: 269px !important;
+  }
+  .question .container,
+  .request .container {
+    padding: 0 5px;
+  }
 }
