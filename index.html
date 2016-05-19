@@ -20,6 +20,103 @@
     <![endif]-->
   </head>
   <body>
+<!--  Modal   -->
+    <div class="modal fade" id="popup-call" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Заказать <span>обратный звонок</span></h4>
+          </div>
+          <div class="modal-body">
+          <p class="thanks-dn">Наши специалист свяжется с Вами в ближайшие несколько минут</p>
+           
+            <div class="input-group">
+              <span class="input-group-addon img-name" id="basic-addon1"></span>
+              <input type="text" class="form-control putName" placeholder="Введите Ваше имя" aria-describedby="basic-addon1" required>
+            </div>
+            
+            <div class="input-group">
+              <span class="input-group-addon img-phone" id="basic-addon1"></span>
+              <input type="text" class="form-control putPhone" placeholder="Введите Ваш телефон" aria-describedby="basic-addon1" required>
+            </div>
+
+         <p class="garant">Мы гарантируем конфиденциальность Ваших личных данных</p>
+         
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">отправить заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!--
+    <div class="modal fade" id="popup-thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <p class="thanks">Спасибо!</p>
+            <p class="thanks-dn">Наши специалист свяжется с Вами в ближайшие несколько минут</p>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+<div id="overlay">
+    <div class="modal-dialog">
+       <div class="modal-content">
+       <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="document.getElementById('overlay').style.visibility='hidden'">&times;</button>
+
+    <div class="content">
+    <p class="thanks">Спасибо!</p>
+    <p class="thanks-dn">Наши специалист свяжется с Вами в ближайшие несколько минут</p>
+    </div>
+    </div>
+        </div>
+    </div>
+</div>
+    
+    <div class="modal fade" id="popup_usluga" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+         
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="modal-header-iline">
+            <div class="modal-img-head"><img src="img/mini-img.png" alt=""></div>
+            <div class="modal-txt-head">
+                <h4 class="modal-title" id="myModalLabel"><span>Заказать услугу</span></h4>
+                <p class="modal_popup_usluga">по оформлению свидетельств о государственной регистрации (СГР)</p>
+            </div>
+            </div>
+          </div>
+          
+          <div class="modal-body">
+          
+          <div class="input-group">
+              <span class="input-group-addon img-name" id="basic-addon1"></span>
+              <input type="text" class="form-control putName" placeholder="Введите Ваше имя" aria-describedby="basic-addon1" required>
+            </div>
+            
+            <div class="input-group">
+              <span class="input-group-addon img-email" id="basic-addon1"></span>
+              <input type="text" class="form-control putEmail" placeholder="Введите Ваш e-mail" aria-describedby="basic-addon1" required>
+            </div>
+            
+         <p class="garant">Мы гарантируем конфиденциальность Ваших личных данных</p>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">отправить заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!--  Modal   -->
       <div class="wrapper">
           <header>
               <div class="container">
@@ -30,7 +127,7 @@
                   <div class="phone-head col-lg-2 col-md-2">
                       <span class="phone1">+3 7517 396 48 47</span>
                       <span class="phone1">+3 7517 284 00 81</span>
-                      <a href="/">Заказать обратный звонок</a>
+                      <a href="#" data-toggle="modal" data-target="#popup-call">Заказать обратный звонок</a>
                   </div> 
                   <nav class="navbar menu col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
                       <div class="container">
@@ -115,47 +212,47 @@
                       <div class="sertificat col-lg-4 col-md-4 col-sm-6 col-xs-12">
                           <img src="img/sertificat1.jpg" alt="">   
                           <p class="for-sertificat">Подтверждение соответствия продукции требованиям Технических регламентов Таможенного Союза </p> 
-                          <a href="/">заказать</a>
+                          <a href="#" data-toggle="modal" data-target="#popup_usluga">заказать</a>
                       </div>
                       <div class="sertificat col-lg-4 col-md-4 col-sm-6 col-xs-12">
                           <img src="img/sertificat2.jpg" alt="">   
                           <p class="for-sertificat">Подтверждение соответствия продукции требованиям пожарной безопасности </p> 
-                          <a href="/">заказать</a>
+                          <a href="#" data-toggle="modal" data-target="#popup_usluga">заказать</a>
                       </div>
                       <div class="sertificat col-lg-4 col-md-4 col-sm-6 col-xs-12">
                           <img src="img/sertificat3.jpg" alt="">   
                           <p class="for-sertificat">Сертификация системы менеджмента качества на соответствие ИСО 9001, ИСО 14 000, 18 000, 22 000 и др.</p> 
-                          <a href="/">заказать</a>
+                          <a href="#" data-toggle="modal" data-target="#popup_usluga">заказать</a>
                       </div>
                       <div class="sertificat col-lg-4 col-md-4 col-sm-6 col-xs-12">
                           <img src="img/sertificat4.jpg" alt="">   
                           <p class="for-sertificat">Подтверждение соответствия продукции требованиям Европейской сертификации (СЕ) </p> 
-                          <a href="/">заказать</a>
+                          <a href="#" data-toggle="modal" data-target="#popup_usluga">заказать</a>
                       </div>
                       <div class="sertificat col-lg-4 col-md-4 col-sm-6 col-xs-12">
                           <img src="img/sertificat5.jpg" alt="">   
                           <p class="for-sertificat">Подтверждение соответствия продукции в Системе ГОСТ Р </p> 
-                          <a href="/">заказать</a>
+                          <a href="#" data-toggle="modal" data-target="#popup_usluga">заказать</a>
                       </div>
                       <div class="sertificat col-lg-4 col-md-4 col-sm-6 col-xs-12">
                           <img src="img/sertificat6.jpg" alt="">   
                           <p class="for-sertificat">Оказание услуг по оформлению свидетельств о государственной регистрации (СГР) </p> 
-                          <a href="/">заказать</a>
+                          <a href="#" data-toggle="modal" data-target="#popup_usluga">заказать</a>
                       </div>
                       <div class="sertificat col-lg-4 col-md-4 col-sm-6 col-xs-12">
                           <img src="img/sertificat7.jpg" alt="">   
                           <p class="for-sertificat">Оформление иной разрешительной документации (разъяснительных и отказных писем, актов б/у, регистрационных и прочих удост.) </p> 
-                          <a href="/">заказать</a>
+                          <a href="#" data-toggle="modal" data-target="#popup_usluga">заказать</a>
                       </div>
                       <div class="sertificat col-lg-4 col-md-4 col-sm-6 col-xs-12">
                           <img src="img/sertificat8.jpg" alt="">   
                           <p class="for-sertificat">Разработка технической документации (Технические условия, обоснование безопасности, стандарты организации, руководства по эксплуатации) </p> 
-                          <a href="/">заказать</a>
+                          <a href="#" data-toggle="modal" data-target="#popup_usluga">заказать</a>
                       </div>
                       <div class="sertificat col-lg-4 col-md-4 col-sm-6 col-xs-12">
                           <img src="img/sertificat9.jpg" alt="">   
                           <p class="for-sertificat">Экспертиза промышленной безопасности</p> 
-                          <a href="/">заказать</a>
+                          <a href="#" data-toggle="modal" data-target="#popup_usluga">заказать</a>
                       </div>
                   </div>    
               </div>
