@@ -23,6 +23,7 @@ h2 {
   font-size: 35px;
   font-weight: 700;
   line-height: 40px;
+    text-align: center;
 }
 h2:before {
   content: '';
@@ -46,24 +47,109 @@ header{
 }
 .phone-head{
     float:right;
+    height: 80px;
 }
 .head-span{
     display:block;
 }
 header h2{
-    font-size: 16pt;
+    color: #383d45;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 0px;
+    padding-bottom: 0px;
 }
-
+header h2:before {  
+    left: 130px;  
+}
+.phone-head .phone1{
+    color:  #006699;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 26.479px;
+    text-align: justify;
+    margin:0px;
+}
+.phone-head a{
+    color:  #ff6600;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: justify;
+    display: block;
+    border-bottom: 1px dashed #ff6600;
+    width: 180px;
+}
+.phone-head a:hover{
+    text-decoration: none;
+    border-bottom: none;
+}
+.header-two{
+    background: #fafafa;
+}
 .navbar{
-    margin-bottom: 0px;
+    margin:0 auto;
+    min-height: 44px;
 }
-    
+.nav{    
+    margin:0 auto;
+    float:none;
+    width:550px;
 }
-.navbar ul li a{
-    
+.collapse{
+    text-align: center;
+    margin:0 auto;
+    float:none;
 }
-
+.nav li a{
+    color:  #666666;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26.479px;
+    text-decoration: underline;
+    text-align: justify;
+    padding:0px 20px;
+    line-height: 44px;
+}
+.nav li a:hover{
+    background: none;
+    color: #ff6600;
+    text-decoration: underline;
+}
 /*==============================================*/
+/*=======================slider============================*/
+.carousel-caption{
+    left:50%;
+    right: 1%;
+    bottom: 95px;
+    z-index: 0;
+    text-shadow: none;
+}
+.main-slider h1{
+    color:  #333333;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 51.744px;
+    text-align: left;
+    text-transform: uppercase;    
+}
+.main-slider p{
+    color:  #ff6600;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: justify;
+}
+.main-slider ul>li{
+    color:  #ff6600;
+    font-size: 32px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 41px;/* Приближение из-за подстановки шрифтов */
+    text-align: justify;
+    text-transform: uppercase;
+}
+/*=======================about============================*/
 .about-company {
     background: url(../img/about-bg.jpg) no-repeat left top;
     background-size: contain;
@@ -160,12 +246,20 @@ header h2{
     line-height: 93px;
 }
 /*====================== Uslugi ===========================*/
-.sertificat{
-    background: url(img/sertiif-bg.jpg) bottom no-repeat;
+.uslugy{
+    background: url(../img/sertiif-bg.jpg) no-repeat bottom center;
+}
+.sertificat{    
     text-align: center;
     box-shadow: 7px 13px 27px 0px rgba(91, 76, 107, 0.13);
-    height: 430px;
-    margin-top: 50px;
+    height: 470px;
+    margin-top: 25px auto;
+    width: 312px;
+    margin-bottom: 40px;
+    z-index: 10;
+    background: #fff;
+    position: relative;
+    padding: 0px 10px;
 }
 .sertificat:hover{
     box-shadow: 0px 1px 1px 0px rgba(114, 79, 75, 0.19);
@@ -174,19 +268,25 @@ header h2{
     font-size: 14px;
     font-weight: 600;
 }
+.sertificat .zakazat{
+    position: absolute;
+    bottom: 27px;
+    width: 100%;
+    left: 0px;
+}
 .sertificat a{
     color:  #ffffff;
     font-size: 15px;
     font-weight: 300;
     line-height: 35px;
     text-align: justify;
-    transform: scaleY(1.0002);    
+    transform: scaleY(1.0002);  
+    text-transform: uppercase;
     width: 151px;
     height: 35px;
     display: block;
     text-align: center;
     margin: 0 auto;
-    margin-top: 20px;
     background-color:  #ff6600;
     box-shadow: 1px 2px 0px 0px #db5800;
     }
