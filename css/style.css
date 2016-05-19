@@ -445,6 +445,116 @@ footer img {
   line-height: 22px;
 }
 
+/*==========  MODALS  ==========*/
+.modal {background: rgba(255,255,255, .9)}
+.modal .modal-content{
+    box-shadow: none;
+    width: 100%;
+    max-width: 570px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+.modal .close{
+    font-weight: normal;
+    font-size: 40px;
+    color: #f60;
+    opacity: 1;
+    text-shadow: none;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.modal .close:hover{color: #fff}
+.modal .modal-content{border-radius: 0; background-color: #006699;}
+.modal-header{border: none;}
+.modal .modal-body{border: none;}
+.modal .modal-footer{border: none}
+
+.modal .modal-header h4{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 320px;
+    line-height: 35px;
+}
+.modal .modal-header h4 span{text-transform: uppercase;}
+
+.modal .input-group-addon{
+    border: none;
+    background-color: #fff;
+    border-right: 1px solid #e4e4e4;
+    padding: 12px 24px;
+}
+.modal .form-control{
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: #666666;
+    height: 45px;
+}
+
+.modal .input-group{border: 1px solid #006699; border-radius: 4px;margin-bottom: 15px;}
+.modal .input-group:hover{border: 1px solid #ff7100;}
+
+.modal .garant{
+    color: #99ccff;
+    padding-left: 50px; 
+    background: url(../img/lock.png) no-repeat  20px center;
+    font-size: 14px;
+}
+.modal .modal-footer .btn{
+    border-radius: 2px;
+    background-color: #ff6600;
+    outline: none;
+    width: 100%;
+    max-width: 269px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+.modal .modal-header-iline{width: 100%; min-height: 220px;}
+.modal .modal-img-head{width: 33%; display: inline-block;}
+.modal .modal-img-head img{width: 100%; max-width: 163px;}
+.modal .modal-txt-head{width: 66%; display: inline-block; vertical-align: middle; padding-left: 35px}
+.modal .modal_popup_usluga{color: #fff; font-size: 16px; font-weight: 700}
+.modal .img-name{background: rgba(255, 255, 255, 1) url(../img/name.png) no-repeat   center;}
+.modal .img-phone{background: rgba(255, 255, 255, 1) url(../img/tel.png) no-repeat   center;}
+.modal .img-email{background: rgba(255, 255, 255, 1) url(../img/email.png) no-repeat   center;}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    visibility: hidden;
+    z-index: 999;
+    background: rgba(255, 255, 255, .9);
+}
+#overlay .close{font-weight: normal;font-size: 40px;color: #f60;opacity: 1;text-shadow: none;
+    position: absolute;right: 20px;top: 15px;}
+
+#overlay .close:hover{color: #fff;}
+
+.thanks{color: #fff;font-weight: 700; font-size: 30px}
+.thanks-dn{color: #ff6600;font-weight: 700; font-size: 18px}
+
+#overlay .modal-dialog{margin: 10% auto auto auto;}
+
+#overlay .modal-dialog .modal-content{
+    box-shadow: none;
+    width: 100%;
+    max-width: 570px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    background-color: #006699;
+}
+/*==========  MODALS  ==========*/
+
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
